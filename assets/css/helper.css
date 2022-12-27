@@ -1,0 +1,122 @@
+*,
+*::after,
+*::before{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    line-height: 1.5;
+}
+
+.container-fluid{
+    width:100%;
+}
+
+.container{
+    width:1200px;
+    margin: 0 auto;
+}
+
+.row,
+.row::after,
+.row::before{
+    width:100%;
+    clear:both;
+    display:table;
+}
+
+[class^="col"]{
+    float:left;
+    padding:0 15px;
+}
+
+.col-sm-1{
+    width:calc(100% * 1 / 12);
+}
+.col-sm-2{
+    width:calc(100% * 2 / 12);
+}
+.col-sm-3{
+    width:calc(100% * 3 / 12);
+}
+.col-sm-4{
+    width:calc(100% * 4 / 12);
+}
+.col-sm-5{
+    width:calc(100% * 5 / 12);
+}
+.col-sm-6{
+    width:calc(100% * 6 / 12);
+}
+.col-sm-7{
+    width:calc(100% * 7 / 12);
+}
+.col-sm-8{
+    width:calc(100% * 8 / 12);
+}
+.col-sm-9{
+    width:calc(100% * 9 / 12);
+}
+.col-sm-10{
+    width:calc(100% * 10 / 12);
+}
+.col-sm-11{
+    width:calc(100% * 11 / 12);
+}
+.col-sm-12{
+    width:calc(100% * 12 / 12);
+}
+
+.offset-sm-2{
+    margin-left:calc(100% * 2 / 12);
+}
+
+.offset-sm-3{
+    margin-left:calc(100% * 3 / 12);
+}
+
+.offset-sm-6{
+    margin-left: calc(100% * 6 / 12);
+}
+
+.text-center{
+    text-align: center;
+}
+
+.image-fluid{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.navbar ul li a::after,
+.readMoreInfo .readMoreText::after,
+.shop-all::after,
+.contact .secondaryText::after,
+.article .secondaryHeading::after{
+    content:"";
+    width:0%;
+    height: 3px;
+    background-color: #8dc1f3;
+    position:absolute;
+	left:0;
+	bottom:0;
+	transition:all 0.8s ease-in-out;
+}
+
+.navbar li a:hover::after,
+.navbar li a:active::after,
+.navbar li a:focus::after,
+.readMoreInfo .readMoreText:hover::after,
+.readMoreInfo .readMoreText:active::after,
+.readMoreInfo .readMoreText:focus::after,
+.shop-all:hover::after,
+.shop-all:active::after,
+.shop-all:focus::after,
+.contact .secondaryText:hover::after,
+.contact .secondaryText:active::after,
+.contact .secondaryText:focus::after,
+.article .secondaryHeading:hover::after,
+.article .secondaryHeading:active::after,
+.article .secondaryHeading:focus::after{
+    width:100%;
+}
